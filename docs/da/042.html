@@ -1,0 +1,3288 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>向量化函数 · AiLearning 中文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="ApacheCN">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="043.html" />
+    
+    
+    <link rel="prev" href="041.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"apachecn","repo":"AiLearning","type":"star","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    入门须知
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    数据分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="001.html">
+            
+                <a href="001.html">
+            
+                    
+                    01. Python 工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="002.html">
+            
+                <a href="002.html">
+            
+                    
+                    Python 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="003.html">
+            
+                <a href="003.html">
+            
+                    
+                    Ipython 解释器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="004.html">
+            
+                <a href="004.html">
+            
+                    
+                    Ipython notebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="005.html">
+            
+                <a href="005.html">
+            
+                    
+                    使用 Anaconda
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="006.html">
+            
+                <a href="006.html">
+            
+                    
+                    02. Python 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="007.html">
+            
+                <a href="007.html">
+            
+                    
+                    Python 入门演示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="008.html">
+            
+                <a href="008.html">
+            
+                    
+                    Python 数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="009.html">
+            
+                <a href="009.html">
+            
+                    
+                    数字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="010.html">
+            
+                <a href="010.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="011.html">
+            
+                <a href="011.html">
+            
+                    
+                    索引和分片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="012.html">
+            
+                <a href="012.html">
+            
+                    
+                    列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="013.html">
+            
+                <a href="013.html">
+            
+                    
+                    可变和不可变类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="014.html">
+            
+                <a href="014.html">
+            
+                    
+                    元组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="015.html">
+            
+                <a href="015.html">
+            
+                    
+                    列表与元组的速度比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="016.html">
+            
+                <a href="016.html">
+            
+                    
+                    字典
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.11" data-path="017.html">
+            
+                <a href="017.html">
+            
+                    
+                    集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="018.html">
+            
+                <a href="018.html">
+            
+                    
+                    不可变集合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="019.html">
+            
+                <a href="019.html">
+            
+                    
+                    Python 赋值机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="020.html">
+            
+                <a href="020.html">
+            
+                    
+                    判断语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="021.html">
+            
+                <a href="021.html">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="022.html">
+            
+                <a href="022.html">
+            
+                    
+                    列表推导式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="023.html">
+            
+                <a href="023.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="024.html">
+            
+                <a href="024.html">
+            
+                    
+                    模块和包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.19" data-path="025.html">
+            
+                <a href="025.html">
+            
+                    
+                    异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.20" data-path="026.html">
+            
+                <a href="026.html">
+            
+                    
+                    警告
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.21" data-path="027.html">
+            
+                <a href="027.html">
+            
+                    
+                    文件读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="028.html">
+            
+                <a href="028.html">
+            
+                    
+                    03. Numpy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="029.html">
+            
+                <a href="029.html">
+            
+                    
+                    Numpy 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="030.html">
+            
+                <a href="030.html">
+            
+                    
+                    Matplotlib 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="031.html">
+            
+                <a href="031.html">
+            
+                    
+                    Numpy 数组及其索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="032.html">
+            
+                <a href="032.html">
+            
+                    
+                    数组类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="033.html">
+            
+                <a href="033.html">
+            
+                    
+                    数组方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="034.html">
+            
+                <a href="034.html">
+            
+                    
+                    数组排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="035.html">
+            
+                <a href="035.html">
+            
+                    
+                    数组形状
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="036.html">
+            
+                <a href="036.html">
+            
+                    
+                    对角线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="037.html">
+            
+                <a href="037.html">
+            
+                    
+                    数组与字符串的转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="038.html">
+            
+                <a href="038.html">
+            
+                    
+                    数组属性方法总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="039.html">
+            
+                <a href="039.html">
+            
+                    
+                    生成数组的函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="040.html">
+            
+                <a href="040.html">
+            
+                    
+                    矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="041.html">
+            
+                <a href="041.html">
+            
+                    
+                    一般函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3.14" data-path="042.html">
+            
+                <a href="042.html">
+            
+                    
+                    向量化函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="043.html">
+            
+                <a href="043.html">
+            
+                    
+                    二元运算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.16" data-path="044.html">
+            
+                <a href="044.html">
+            
+                    
+                    ufunc 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.17" data-path="045.html">
+            
+                <a href="045.html">
+            
+                    
+                    choose 函数实现条件筛选
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.18" data-path="046.html">
+            
+                <a href="046.html">
+            
+                    
+                    数组广播机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.19" data-path="047.html">
+            
+                <a href="047.html">
+            
+                    
+                    数组读写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.20" data-path="048.html">
+            
+                <a href="048.html">
+            
+                    
+                    结构化数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.21" data-path="049.html">
+            
+                <a href="049.html">
+            
+                    
+                    记录数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.22" data-path="050.html">
+            
+                <a href="050.html">
+            
+                    
+                    内存映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.23" data-path="051.html">
+            
+                <a href="051.html">
+            
+                    
+                    从 Matlab 到 Numpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="052.html">
+            
+                <a href="052.html">
+            
+                    
+                    04. Scipy
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="053.html">
+            
+                <a href="053.html">
+            
+                    
+                    SCIentific PYthon 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="054.html">
+            
+                <a href="054.html">
+            
+                    
+                    插值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="055.html">
+            
+                <a href="055.html">
+            
+                    
+                    概率统计方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="056.html">
+            
+                <a href="056.html">
+            
+                    
+                    曲线拟合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="057.html">
+            
+                <a href="057.html">
+            
+                    
+                    最小化函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="058.html">
+            
+                <a href="058.html">
+            
+                    
+                    积分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.7" data-path="059.html">
+            
+                <a href="059.html">
+            
+                    
+                    解微分方程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.8" data-path="060.html">
+            
+                <a href="060.html">
+            
+                    
+                    稀疏矩阵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.9" data-path="061.html">
+            
+                <a href="061.html">
+            
+                    
+                    线性代数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.10" data-path="062.html">
+            
+                <a href="062.html">
+            
+                    
+                    稀疏矩阵的线性代数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="063.html">
+            
+                <a href="063.html">
+            
+                    
+                    05. Python 进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="064.html">
+            
+                <a href="064.html">
+            
+                    
+                    sys 模块简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="065.html">
+            
+                <a href="065.html">
+            
+                    
+                    与操作系统进行交互：os 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="066.html">
+            
+                <a href="066.html">
+            
+                    
+                    CSV 文件和 csv 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="067.html">
+            
+                <a href="067.html">
+            
+                    
+                    正则表达式和 re 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="068.html">
+            
+                <a href="068.html">
+            
+                    
+                    datetime 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.6" data-path="069.html">
+            
+                <a href="069.html">
+            
+                    
+                    SQL 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.7" data-path="070.html">
+            
+                <a href="070.html">
+            
+                    
+                    对象关系映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.8" data-path="071.html">
+            
+                <a href="071.html">
+            
+                    
+                    函数进阶：参数传递，高阶函数，lambda 匿名函数，global 变量，递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.9" data-path="072.html">
+            
+                <a href="072.html">
+            
+                    
+                    迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.10" data-path="073.html">
+            
+                <a href="073.html">
+            
+                    
+                    生成器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.11" data-path="074.html">
+            
+                <a href="074.html">
+            
+                    
+                    with 语句和上下文管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.12" data-path="075.html">
+            
+                <a href="075.html">
+            
+                    
+                    修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.13" data-path="076.html">
+            
+                <a href="076.html">
+            
+                    
+                    修饰符的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.14" data-path="077.html">
+            
+                <a href="077.html">
+            
+                    
+                    operator, functools, itertools, toolz, fn, funcy 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.15" data-path="078.html">
+            
+                <a href="078.html">
+            
+                    
+                    作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.16" data-path="079.html">
+            
+                <a href="079.html">
+            
+                    
+                    动态编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="080.html">
+            
+                <a href="080.html">
+            
+                    
+                    06. Matplotlib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="081.html">
+            
+                <a href="081.html">
+            
+                    
+                    Pyplot 教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="082.html">
+            
+                <a href="082.html">
+            
+                    
+                    使用 style 来配置 pyplot 风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="083.html">
+            
+                <a href="083.html">
+            
+                    
+                    处理文本（基础）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="084.html">
+            
+                <a href="084.html">
+            
+                    
+                    处理文本（数学表达式）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="085.html">
+            
+                <a href="085.html">
+            
+                    
+                    图像基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="086.html">
+            
+                <a href="086.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.7" data-path="087.html">
+            
+                <a href="087.html">
+            
+                    
+                    标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.8" data-path="088.html">
+            
+                <a href="088.html">
+            
+                    
+                    figures, subplots, axes 和 ticks 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.9" data-path="089.html">
+            
+                <a href="089.html">
+            
+                    
+                    不要迷信默认设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.10" data-path="090.html">
+            
+                <a href="090.html">
+            
+                    
+                    各种绘图实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="091.html">
+            
+                <a href="091.html">
+            
+                    
+                    07. 使用其他语言进行扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.7.1" data-path="092.html">
+            
+                <a href="092.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.2" data-path="093.html">
+            
+                <a href="093.html">
+            
+                    
+                    Python 扩展模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.3" data-path="094.html">
+            
+                <a href="094.html">
+            
+                    
+                    Cython：Cython 基础，将源代码转换成扩展模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.4" data-path="095.html">
+            
+                <a href="095.html">
+            
+                    
+                    Cython：Cython 语法，调用其他C库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.5" data-path="096.html">
+            
+                <a href="096.html">
+            
+                    
+                    Cython：class 和 cdef class，使用 C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.6" data-path="097.html">
+            
+                <a href="097.html">
+            
+                    
+                    Cython：Typed memoryviews
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.7" data-path="098.html">
+            
+                <a href="098.html">
+            
+                    
+                    生成编译注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7.8" data-path="099.html">
+            
+                <a href="099.html">
+            
+                    
+                    ctypes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="100.html">
+            
+                <a href="100.html">
+            
+                    
+                    08. 面向对象编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="101.html">
+            
+                <a href="101.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="102.html">
+            
+                <a href="102.html">
+            
+                    
+                    使用 OOP 对森林火灾建模
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.3" data-path="103.html">
+            
+                <a href="103.html">
+            
+                    
+                    什么是对象？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.4" data-path="104.html">
+            
+                <a href="104.html">
+            
+                    
+                    定义 class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.5" data-path="105.html">
+            
+                <a href="105.html">
+            
+                    
+                    特殊方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.6" data-path="106.html">
+            
+                <a href="106.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.7" data-path="107.html">
+            
+                <a href="107.html">
+            
+                    
+                    森林火灾模拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.8" data-path="108.html">
+            
+                <a href="108.html">
+            
+                    
+                    继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.9" data-path="109.html">
+            
+                <a href="109.html">
+            
+                    
+                    super() 函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.10" data-path="110.html">
+            
+                <a href="110.html">
+            
+                    
+                    重定义森林火灾模拟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.11" data-path="111.html">
+            
+                <a href="111.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.12" data-path="112.html">
+            
+                <a href="112.html">
+            
+                    
+                    共有，私有和特殊方法和属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.13" data-path="113.html">
+            
+                <a href="113.html">
+            
+                    
+                    多重继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="114.html">
+            
+                <a href="114.html">
+            
+                    
+                    09. Theano 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.9.1" data-path="115.html">
+            
+                <a href="115.html">
+            
+                    
+                    Theano 简介及其安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.2" data-path="116.html">
+            
+                <a href="116.html">
+            
+                    
+                    Theano 基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.3" data-path="117.html">
+            
+                <a href="117.html">
+            
+                    
+                    Theano 在 Windows 上的配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.4" data-path="118.html">
+            
+                <a href="118.html">
+            
+                    
+                    Theano 符号图结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.5" data-path="119.html">
+            
+                <a href="119.html">
+            
+                    
+                    Theano 配置和编译模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.6" data-path="120.html">
+            
+                <a href="120.html">
+            
+                    
+                    Theano 条件语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.7" data-path="121.html">
+            
+                <a href="121.html">
+            
+                    
+                    Theano 循环：scan（详解）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.8" data-path="122.html">
+            
+                <a href="122.html">
+            
+                    
+                    Theano 实例：线性回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.9" data-path="123.html">
+            
+                <a href="123.html">
+            
+                    
+                    Theano 实例：Logistic 回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.10" data-path="124.html">
+            
+                <a href="124.html">
+            
+                    
+                    Theano 实例：Softmax 回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.11" data-path="125.html">
+            
+                <a href="125.html">
+            
+                    
+                    Theano 实例：人工神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.12" data-path="126.html">
+            
+                <a href="126.html">
+            
+                    
+                    Theano 随机数流变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.13" data-path="127.html">
+            
+                <a href="127.html">
+            
+                    
+                    Theano 实例：更复杂的网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.14" data-path="128.html">
+            
+                <a href="128.html">
+            
+                    
+                    Theano 实例：卷积神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.15" data-path="129.html">
+            
+                <a href="129.html">
+            
+                    
+                    Theano tensor 模块：基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.16" data-path="130.html">
+            
+                <a href="130.html">
+            
+                    
+                    Theano tensor 模块：索引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.17" data-path="131.html">
+            
+                <a href="131.html">
+            
+                    
+                    Theano tensor 模块：操作符和逐元素操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.18" data-path="132.html">
+            
+                <a href="132.html">
+            
+                    
+                    Theano tensor 模块：nnet 子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9.19" data-path="133.html">
+            
+                <a href="133.html">
+            
+                    
+                    Theano tensor 模块：conv 子模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="134.html">
+            
+                <a href="134.html">
+            
+                    
+                    10. 有趣的第三方模块
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.10.1" data-path="135.html">
+            
+                <a href="135.html">
+            
+                    
+                    使用 basemap 画地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.2" data-path="136.html">
+            
+                <a href="136.html">
+            
+                    
+                    使用 cartopy 画地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.3" data-path="137.html">
+            
+                <a href="137.html">
+            
+                    
+                    探索 NBA 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10.4" data-path="138.html">
+            
+                <a href="138.html">
+            
+                    
+                    金庸的武侠世界
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="139.html">
+            
+                <a href="139.html">
+            
+                    
+                    11. 有用的工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="140.html">
+            
+                <a href="140.html">
+            
+                    
+                    pprint 模块：打印 Python 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="141.html">
+            
+                <a href="141.html">
+            
+                    
+                    pickle, cPickle 模块：序列化 Python 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.3" data-path="142.html">
+            
+                <a href="142.html">
+            
+                    
+                    json 模块：处理 JSON 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.4" data-path="143.html">
+            
+                <a href="143.html">
+            
+                    
+                    glob 模块：文件模式匹配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.5" data-path="144.html">
+            
+                <a href="144.html">
+            
+                    
+                    shutil 模块：高级文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.6" data-path="145.html">
+            
+                <a href="145.html">
+            
+                    
+                    gzip, zipfile, tarfile 模块：处理压缩文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.7" data-path="146.html">
+            
+                <a href="146.html">
+            
+                    
+                    logging 模块：记录日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.8" data-path="147.html">
+            
+                <a href="147.html">
+            
+                    
+                    string 模块：字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.9" data-path="148.html">
+            
+                <a href="148.html">
+            
+                    
+                    collections 模块：更多数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.10" data-path="149.html">
+            
+                <a href="149.html">
+            
+                    
+                    requests 模块：HTTP for Human
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="150.html">
+            
+                <a href="150.html">
+            
+                    
+                    12. Pandas
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="151.html">
+            
+                <a href="151.html">
+            
+                    
+                    十分钟上手 Pandas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.2" data-path="152.html">
+            
+                <a href="152.html">
+            
+                    
+                    一维数据结构：Series
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.3" data-path="153.html">
+            
+                <a href="153.html">
+            
+                    
+                    二维数据结构：DataFrame
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    机器学习
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ml/1.html">
+            
+                <a href="../ml/1.html">
+            
+                    
+                    第1章_基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ml/2.html">
+            
+                <a href="../ml/2.html">
+            
+                    
+                    第2章_K近邻算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ml/3.html">
+            
+                <a href="../ml/3.html">
+            
+                    
+                    第3章_决策树算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../ml/4.html">
+            
+                <a href="../ml/4.html">
+            
+                    
+                    第4章_朴素贝叶斯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../ml/5.html">
+            
+                <a href="../ml/5.html">
+            
+                    
+                    第5章_逻辑回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../ml/6.html">
+            
+                <a href="../ml/6.html">
+            
+                    
+                    第6章_支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../ml/7.html">
+            
+                <a href="../ml/7.html">
+            
+                    
+                    第7章_集成方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../ml/8.html">
+            
+                <a href="../ml/8.html">
+            
+                    
+                    第8章_回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../ml/9.html">
+            
+                <a href="../ml/9.html">
+            
+                    
+                    第9章_树回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../ml/10.html">
+            
+                <a href="../ml/10.html">
+            
+                    
+                    第10章_KMeans聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../ml/11.html">
+            
+                <a href="../ml/11.html">
+            
+                    
+                    第11章_Apriori算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../ml/12.html">
+            
+                <a href="../ml/12.html">
+            
+                    
+                    第12章_FP-growth算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../ml/13.html">
+            
+                <a href="../ml/13.html">
+            
+                    
+                    第13章_PCA降维
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../ml/14.html">
+            
+                <a href="../ml/14.html">
+            
+                    
+                    第14章_SVD简化数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../ml/15.html">
+            
+                <a href="../ml/15.html">
+            
+                    
+                    第15章_大数据与MapReduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../ml/16.html">
+            
+                <a href="../ml/16.html">
+            
+                    
+                    第16章_推荐系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="../why-to-record-study-ml-video.html">
+            
+                <a href="../why-to-record-study-ml-video.html">
+            
+                    
+                    为何录制教学版视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.18" data-path="../report/2017-04-08.html">
+            
+                <a href="../report/2017-04-08.html">
+            
+                    
+                    2017-04-08_第一期的总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    深度学习入门
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../dl/反向传递.html">
+            
+                <a href="../dl/反向传递.html">
+            
+                    
+                    反向传递
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../dl/CNN原理.html">
+            
+                <a href="../dl/CNN原理.html">
+            
+                    
+                    CNN原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../dl/RNN原理.html">
+            
+                <a href="../dl/RNN原理.html">
+            
+                    
+                    RNN原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../dl/LSTM原理.html">
+            
+                <a href="../dl/LSTM原理.html">
+            
+                    
+                    LSTM原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    自然语言处理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../nlp/1.入门介绍.html">
+            
+                <a href="../nlp/1.入门介绍.html">
+            
+                    
+                    第1章_入门介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../nlp/2.分词.html">
+            
+                <a href="../nlp/2.分词.html">
+            
+                    
+                    第2章_分词
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../nlp/3.命名实体识别.html">
+            
+                <a href="../nlp/3.命名实体识别.html">
+            
+                    
+                    第3章_命名实体识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../nlp/3.1.篇章分析-内容概述.html">
+            
+                <a href="../nlp/3.1.篇章分析-内容概述.html">
+            
+                    
+                    第10章_篇章分析-内容概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../nlp/3.2.篇章分析-内容标签.html">
+            
+                <a href="../nlp/3.2.篇章分析-内容标签.html">
+            
+                    
+                    第10章_篇章分析-内容标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../nlp/3.3.篇章分析-情感分析.html">
+            
+                <a href="../nlp/3.3.篇章分析-情感分析.html">
+            
+                    
+                    第10章_篇章分析-情感分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../nlp/3.4.篇章分析-自动摘要.html">
+            
+                <a href="../nlp/3.4.篇章分析-自动摘要.html">
+            
+                    
+                    第10章_篇章分析-自动摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    TensorFlow 2.0 - 教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../TensorFlow2.x/安装指南.html">
+            
+                <a href="../TensorFlow2.x/安装指南.html">
+            
+                    
+                    安装指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../TensorFlow2.x/Keras快速入门.html">
+            
+                <a href="../TensorFlow2.x/Keras快速入门.html">
+            
+                    
+                    Kears 快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../TensorFlow2.x/实战项目_1_电影情感分类.html">
+            
+                <a href="../TensorFlow2.x/实战项目_1_电影情感分类.html">
+            
+                    
+                    实战项目 1 电影情感分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../TensorFlow2.x/实战项目_2_汽车燃油效率.html">
+            
+                <a href="../TensorFlow2.x/实战项目_2_汽车燃油效率.html">
+            
+                    
+                    实战项目 2 汽车燃油效率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../TensorFlow2.x/实战项目_3_优化_过拟合和欠拟合.html">
+            
+                <a href="../TensorFlow2.x/实战项目_3_优化_过拟合和欠拟合.html">
+            
+                    
+                    实战项目 3 优化 过拟合和欠拟合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../TensorFlow2.x/实战项目_4_古诗词自动生成.html">
+            
+                <a href="../TensorFlow2.x/实战项目_4_古诗词自动生成.html">
+            
+                    
+                    实战项目 4 古诗词自动生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >向量化函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5411;&#x91CF;&#x5316;&#x51FD;&#x6570;">&#x5411;&#x91CF;&#x5316;&#x51FD;&#x6570;</h1>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x7684; <code>sinc</code> &#x51FD;&#x6570;&#xFF1A;</p>
+<p>In [1]:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sinc</span><span class="hljs-params">(x)</span>:</span>
+    <span class="hljs-keyword">if</span> x == <span class="hljs-number">0.0</span>:
+        <span class="hljs-keyword">return</span> <span class="hljs-number">1.0</span>
+    <span class="hljs-keyword">else</span>:
+        w = np.pi * x
+        <span class="hljs-keyword">return</span> np.sin(w) / w
+</code></pre>
+<p>&#x4F5C;&#x7528;&#x4E8E;&#x5355;&#x4E2A;&#x6570;&#x503C;&#xFF1A;</p>
+<p>In [2]:</p>
+<pre><code class="lang-py">sinc(<span class="hljs-number">0.0</span>)
+</code></pre>
+<p>Out[2]:</p>
+<pre><code class="lang-py"><span class="hljs-number">1.0</span>
+</code></pre>
+<p>In [3]:</p>
+<pre><code class="lang-py">sinc(<span class="hljs-number">3.0</span>)
+</code></pre>
+<p>Out[3]:</p>
+<pre><code class="lang-py"><span class="hljs-number">3.8981718325193755e-17</span>
+</code></pre>
+<p>&#x4F46;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x4F5C;&#x7528;&#x4E8E;&#x6570;&#x7EC4;&#xFF1A;</p>
+<p>In [4]:</p>
+<pre><code class="lang-py">x = np.array([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>])
+sinc(x)
+</code></pre>
+<pre><code class="lang-py">---------------------------------------------------------------------------
+ValueError                                Traceback (most recent call last)
+&lt;ipython-input-4-9d4f36f2aa7a&gt; in &lt;module&gt;()
+ 1 x = np.array([1,2,3])
+----&gt; 2  sinc(x)
+
+&lt;ipython-input-1-dffe464e3332&gt; in sinc(x)
+ 2 
+ 3 def sinc(x):
+----&gt; 4  if x == 0.0:
+ 5         return 1.0
+ 6     else:
+
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>numpy</code> &#x7684; <code>vectorize</code> &#x5C06;&#x51FD;&#x6570; <code>sinc</code> &#x5411;&#x91CF;&#x5316;&#xFF0C;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x51FD;&#x6570;&#xFF1A;</p>
+<p>In [5]:</p>
+<pre><code class="lang-py">vsinc = np.vectorize(sinc)
+vsinc(x)
+</code></pre>
+<p>Out[5]:</p>
+<pre><code class="lang-py">array([  <span class="hljs-number">3.89817183e-17</span>,  <span class="hljs-number">-3.89817183e-17</span>,   <span class="hljs-number">3.89817183e-17</span>])
+</code></pre>
+<p>&#x5176;&#x4F5C;&#x7528;&#x662F;&#x4E3A; <code>x</code> &#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x503C;&#x8C03;&#x7528; <code>sinc</code> &#x51FD;&#x6570;&#xFF1A;</p>
+<p>In [6]:</p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+%matplotlib inline
+
+x = np.linspace(<span class="hljs-number">-5</span>,<span class="hljs-number">5</span>,<span class="hljs-number">101</span>)
+plt.plot(x, vsinc(x))
+</code></pre>
+<p>Out[6]:</p>
+<pre><code class="lang-py">[&lt;matplotlib.lines.Line2D at <span class="hljs-number">0xa24e4e0</span>&gt;]
+</code></pre>
+<p><img src="data:image/png;base64,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" alt=""></p>
+<p>&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x7684;&#x7528;&#x6CD5;&#x6D89;&#x53CA;&#x5927;&#x91CF;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5411;&#x91CF;&#x5316;&#x51FD;&#x6570;&#x7684;&#x6548;&#x7387;&#x5E76;&#x4E0D;&#x9AD8;&#x3002;</p>
+<p><hr></p>
+<div align="center">
+    <p><a href="http://www.apachecn.org" target="_blank"><font face="KaiTi" size="6" color="red">&#x6211;&#x4EEC;&#x4E00;&#x76F4;&#x5728;&#x52AA;&#x529B;</font></a></p>
+    <p><a href="https://github.com/apachecn/AiLearning/" target="_blank">apachecn/AiLearning</a></p>
+    <p><iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&amp;repo=AiLearning&amp;type=watch&amp;count=true&amp;v=2" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+    <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&amp;repo=AiLearning&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+    <iframe align="middle" src="https://ghbtns.com/github-btn.html?user=apachecn&amp;repo=AiLearning&amp;type=fork&amp;count=true" frameborder="0" scrolling="0" width="100px" height="25px"></iframe>
+    <a target="_blank" href="../../shang.qq.com/wpa/qunwpa"><img border="0" src="http://data.apachecn.org/img/logo/ApacheCN-group.png" alt="ML | ApacheCN" title="ML | ApacheCN"></a></p>
+</div>
+ <div style="text-align:center;margin:0 0 10.5px;">
+     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+     <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-3565452474788507" data-ad-slot="2543897000">
+     </ins>
+     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?33149aa6702022b1203201da06e23d81";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127082511-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127082511-1');
+    </script>
+</div>
+
+<p><meta name="google-site-verification" content="pyo9N70ZWyh8JB43bIu633mhxesJ1IcwWCZlM3jUfFo"></p>
+<p><iframe src="https://www.bilibili.com/read/cv2710377" style="display:none"></iframe>
+<img src="http://t.cn/AiCoDHwb" hidden="hidden"></p>
+<div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        const gitalk = new Gitalk({
+        clientID: '2e62dee5b9896e2eede6',
+        clientSecret: 'ca6819a54656af0d87960af15315320f8a628a53',
+        repo: 'AiLearning',
+        owner: 'apachecn',
+        admin: ['jiangzhonglian', 'wizardforcel'],
+        id: md5(location.pathname),
+        distractionFreeMode: false
+        })
+        gitalk.render('gitalk-container')
+    </script>
+</div>
+
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; ibooker.org.cn 2019 all right reserved&#xFF0C;&#x7531; ApacheCN &#x56E2;&#x961F;&#x63D0;&#x4F9B;&#x652F;&#x6301;</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;:  
+2020-10-19 13:10:04
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="041.html" class="navigation navigation-prev " aria-label="Previous page: 一般函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="043.html" class="navigation navigation-next " aria-label="Next page: 二元运算">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"向量化函数","level":"1.2.3.14","depth":3,"next":{"title":"二元运算","level":"1.2.3.15","depth":3,"path":"docs/da/043.md","ref":"docs/da/043.md","articles":[]},"previous":{"title":"一般函数","level":"1.2.3.13","depth":3,"path":"docs/da/041.md","ref":"docs/da/041.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","github-buttons","-sharing","insert-logo","sharing-plus","back-to-top-button","code","copy-code-button","katex","pageview-count","edit-link","emphasize","alerts","auto-scroll-table","popup","hide-element","page-toc-button","tbfed-pagefooter","sitemap","advanced-emoji","expandable-chapters","splitter","search-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ibooker.org.cn 2019","modify_label":"该文件修订时间:  ","modify_format":"YYYY-MM-DD HH:mm:ss"},"emphasize":{},"github":{"url":"https://github.com/apachecn/AiLearning"},"splitter":{},"search-pro":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"auto-scroll-table":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sitemap":{"hostname":"http://pytorch.apachecn.org"},"page-toc-button":{"maxTocDepth":4,"minTocSize":4},"back-to-top-button":{},"pageview-count":{},"alerts":{},"github-buttons":{"buttons":[{"user":"apachecn","repo":"AiLearning","type":"star","count":true,"size":"small"}]},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":false,"all":["qq","douban","facebook","google","linkedin","twitter","weibo","whatsapp"],"douban":false,"facebook":false,"weibo":true,"whatsapp":false,"twitter":false,"line":false,"google":false,"qzone":true},"edit-link":{"label":"编辑本页","base":"https://github.com/apachecn/AiLearning/blob/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none; max-height: 150px; min-height: 150px","url":"http://data.apachecn.org/img/logo.jpg"},"expandable-chapters":{}},"my_links":{"sidebar":{"Home":"https://www.baidu.com"}},"theme":"default","author":"ApacheCN","my_plugins":["donate","todo","-lunr","-search","expandable-chapters-small","chapter-fold","expandable-chapters","expandable-chapters-small","back-to-top-button","ga","baidu","sitemap","tbfed-pagefooter","advanced-emoji","sectionx","page-treeview","simple-page-toc","ancre-navigation","theme-apachecn@git+https://github.com/apachecn/theme-apachecn#HEAD","pagefooter-apachecn@git+https://github.com/apachecn/gitbook-plugin-pagefooter-apachecn#HEAD"],"my_pluginsConfig":{"page-treeview":{"copyright":"Copyright &#169; aleen42","minHeaderCount":"2","minHeaderDeep":"2"},"ignores":["node_modules"],"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"page-copyright":{"wisdom":"Designer, Frontend Developer & overall web enthusiast","noPowered":false,"copyright":"Copyright &#169; 你的名字","style":"normal","timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"你的签名","copyrightColor":"#666","description":"modified at"},"donate":{"wechat":"微信收款的二维码URL","alipay":"支付宝收款的二维码URL","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"github-buttons":{"buttons":[{"user":"apachecn","repo":"AiLearning","type":"star","count":true,"size":"small"},{"user":"apachecn","width":"160","type":"follow","count":true,"size":"small"}]},"ga":{"token":"UA-127082511-1"},"baidu":{"token":"75439e2cbd22bdd813226000e9dcc12f"},"pagefooter-apachecn":{"copyright":"Copyright &copy ibooker.org.cn 2019","modify_label":"该文件修订时间:  ","modify_format":"YYYY-MM-DD HH:mm:ss"}},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AiLearning 中文文档","language":"zh-hans","gitbook":"*","description":"AiLearning 中文文档: 教程和文档"},"file":{"path":"docs/da/042.md","mtime":"2020-10-19T13:10:04.443Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-19T13:10:56.471Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
